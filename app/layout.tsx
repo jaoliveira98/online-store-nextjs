@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   description: "Administration dashboard for the app",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <ClerkProvider>
       <html lang="en">
@@ -22,4 +22,6 @@ export default function RootLayout({
       </html>
     </ClerkProvider>
   );
-}
+};
+
+export default RootLayout;
